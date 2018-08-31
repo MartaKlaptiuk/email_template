@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: montserrat, sans-serif;
+    }
+
+    body {
+        background: #f6f6fe;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .logo {
+        background: #061c79;
+        padding: 20px 0 20px 0;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .second-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 38px;
+        color: #171748;
+        display: block;
+        line-height: 56px;
+        font-weight: 400;
+    }
+
+    .oval-button {
+        background-color: transparent;
+        border: 1px solid #3329a1;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 100px;
+        color: #3329a1;
+        height: 52px;
+        line-height: 52px;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 170px;
+    }
+
+    .oval-button:hover {
+        background-color: #3329a1;
+        color: #fff;
+    }
+
+    .city-background {
+        background: url("https://cdn1.radikalno.ru/uploads/2018/8/30/6f58180b145eadbf0c03ced176c3a575-full.png");
+        height: 150px;
+        background-repeat: repeat-x;
+        background-size: contain;
+        margin-top: 50px;
+    }
+
+    .features,
+    .analitica {
+        padding: 50px 0;
+    }
+
+    .features h2,
+    .analitica h2 {
+        font-size: 38px;
+        color: #171748;
+        display: block;
+        line-height: 56px;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+
+    .features h2 span,
+    .analitica h2 span {
+        font-weight: 900;
+        color: #0029e0;
+    }
+
+    .container {
+        max-width: 1140px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+    }
+
+    .big-block {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .block {
+        width: 355px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px #eceff8;
+        background-image: url("https://preview.ibb.co/bAsjXp/bg_block.png");
+        background-size: 324px;
+        background-repeat: no-repeat;
+        background-position: top left;
+        border-radius: 5px;
+        margin: 30px 15px 0 0;
+        min-height: 165px;
+    }
+
+    .features .block h3 {
+        font-weight: 700;
+        color: #0b192d;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .features .block span {
+        font-size: 12px;
+        line-height: 18px;
+        display: block;
+        color: #6466b9;
+    }
+
+    .analitica-block {
+        justify-content: space-between;
+        width: 530px;
+    }
+
+    .analitica-block h5 {
+        display: block;
+        color: #0b192d;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 36px;
+        margin: 0 0 20px;
+    }
+
+    .analitica-block span {
+        font-size: 14px;
+        line-height: 22px;
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: #727e98;
+    }
+
+    .analitica-block p {
+        font-size: 12px;
+        line-height: 22px;
+        color: #727e98;
+        font-weight: 300;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .ratings {
+        background-color: #3d2aa5;
+    }
+
+    .vertical-center {
+        padding: 50px 0;
+    }
+
+    .ratings img {
+        margin-right: 30px;
+    }
+
+    .top {
+        font-size: 11px;
+        color: #fff;
+        font-weight: 300;
+        background: rgba(0, 0, 0, .25);
+        padding: 7px 10px;
+        border-radius: 5px;
+        margin: 30px 20px 0;
+    }
+
+    .top i {
+        font-style: normal;
+        font-weight: 600;
+        color: #ffef00;
+    }
+
+    .top a {
+        color: #fff;
+    }
+
+    .social {
+        padding: 30px;
+    }
+
+    .social li {
+        margin-right: 20px;
+    }
+
+    .unsubscribe {
+        text-align: center;
+        padding: 30px 0;
+        text-decoration: underline;
+    }
+
+    .social img {
+        width: 30px;
+    }
+
+    @media only screen and (max-width: 576px) {
+        .city-background {
+            height: 100px;
+        }
+        .features .block {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="logo flex">
+        <a href="https://introa.io/en/"><img src="https://image.ibb.co/koRTa9/logo_eng.png" alt="logo"></a>
+    </div>
+    <div class="second-block flex">
+        <h1>Motivation quote</h1>
+        <a class="oval-button" href="https://ico.introa.io">
+            Invest in INTRO
+        </a>
+    </div>
+    <div class="city-background">
+    </div>
+    <div class="features">
+        <div class="container">
+            <h2><span>Advantages</span> of INTRO ecosystem</h2>
+
+            <div class="big-block">
+                <div class="block">
+                    <img src="https://image.ibb.co/ekVzhp/i1.png" alt="icon">
+                    <h3>Market transparency</h3>
+                    <span>Advanced market analytics at user-friendly online platform.</span>
+                </div>
+                <div class="block">
+                    <img src="https://image.ibb.co/iSmx2p/i2.png" alt="icon">
+                    <h3>Profitability</h3>
+                    <span>Access to the direct property trade with developers. Brokerage profit up to 30%.</span>
+                </div>
+                <div class="block">
+                    <img src="https://image.ibb.co/gQLqNp/i3.png" alt="icon">
+                    <h3>Open access</h3>
+                    <span>Individual property investors and homebuyers can enter the professional real estate market.</span>
+                </div>
+                <div class="block">
+                    <img src="https://image.ibb.co/fVny8U/i4.png" alt="icon">
+                    <h3>Co-investment in construction</h3>
+                    <span>International investors can join projects of collective investment. Split up the costs & profits
+                        of property rent and re-sale.</span>
+                </div>
+                <div class="block">
+                    <img src="https://image.ibb.co/dMcy8U/i5.png" alt="icon">
+                    <h3>Shared ownership of real estate</h3>
+                    <span>Buy a micro-share in vacation house and use it in turn with other owners. Save up to 15% on your
+                        2-weeks-holidays in the best destinations.</span>
+                </div>
+                <div class="block">
+                    <img src="https://image.ibb.co/grwx2p/i6.png" alt="icon">
+                    <h3>Home loans with 0% interest</h3>
+                    <span>Purchase properties by installment payments at 0% interest during the 3-years-plan. Smart contract
+                        with developer, no banks involved.</span>
+                </div>
+
+            </div>
+            <a class="oval-button flex" href="https://introa.io/en/">
+                Go to the website</a>
+        </div>
+    </div>
+    <div class="analitica">
+        <div class="container">
+            <h2><span>Working products </span> in INTRO ecosystem</h2>
+            <div class="big-block">
+                <div class="block analitica-block">
+                    <h5>INTRO<br> ANALYTICA
+                    </h5>
+                    <span>A business intelligence system for property market analysis & construction management.</span>
+                    <p>INTRO Analytica is used by property developers, banks, market regulators and business media. Access
+                        to individual users is provided only via INTRO token.</p>
+                </div>
+                <div class="block analitica-block">
+                    <h5>INTRO<br> SALE
+                    </h5>
+                    <span>A professional marketplace of real estate from with property auctions.</span>
+                    <p>INTRO Sale is used by developers, building companies and real estate brokers. Access to individual
+                        users is provided only via INTRO token.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ratings">
+        <div class="vertical-center">
+            <div class="flex">
+                <a href="https://icobench.com/ico/intro"><img src="https://image.ibb.co/j7wfNp/logos1.png" alt="logos"></a>
+                <a href="https://www.trackico.io/ico/intro/"><img src="https://image.ibb.co/gYOia9/logos2.png" alt="logos"></a>
+                <a href="https://tokenmarket.net/blockchain/ethereum/assets/intro/"><img src="https://image.ibb.co/gorEhp/logos3.png"
+                        alt="logos"></a>
+            </div>
+            <div class="flex">
+                <p class="top">
+                    <a href="https://icobench.com/icos?page=2&filterSort=rating-desc">
+                        <i>Top 5</i>
+                        in ICOBench global rating
+                    </a>
+                </p>
+                <p class="top">
+                    <a href="http://www.ewdn.com/files/cee_featured.pdf">
+                        <i>Top 5</i>
+                        in CEE Startup rating by ewdn _crunchbase
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="social flex">
+        <li><a href="https://www.facebook.com/introrus" target="_blank"><img src="https://image.ibb.co/ngDmv9/facebook.png"></a></li>
+        <li><a href="https://bitcointalk.org/index.php?topic=2856412" target="_blank"><img src="https://image.ibb.co/et5o8U/bitcoin.png"></a></li>
+        <li><a href="https://t.me/introa_en" target="_blank"><img src="https://image.ibb.co/cRr0Np/telegram.png"></a></li>
+        <li><a href="https://twitter.com/INTRO_io" target="_blank"><img src="https://image.ibb.co/gcOfNp/twitter.png"></a></li>
+        <li><a href="https://medium.com/@INTROtechnology" target="_blank"><img src="https://image.ibb.co/kn3mv9/medium.png"></a></li>
+        <li><a href="https://www.reddit.com/user/intro_technology" target="_blank"><img src="https://image.ibb.co/iCqGv9/reddit.png"></a></li>
+        <li><a href="https://github.com/IntroTechnologyICO/Smart-Contracts" target="_blank"><img src="https://image.ibb.co/m4auhp/github.png"></a></li>
+    </ul>
+</body>
+
+</html>
